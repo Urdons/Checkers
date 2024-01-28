@@ -1,0 +1,50 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    border-width: 0;
+    border-style: none;
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#board {
+    position: absolute;
+    height: 100vh;
+    aspect-ratio: 1/1;
+}
+
+#tiles {
+    z-index: 1;
+}
+
+button {
+    position: absolute;
+    left: 100vh;
+}
+
+.tile {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+}
+
+.tile.w {
+    background-color: #00000000;
+}
+
+.tile.b {
+    background-color: #00000050;
+}
+
+.tile.available {
+    background-color: green;
+}
+
+.tile.attacking {
+    background-color: red;
+}
+
+.piece {
+    position: absolute;
+    z-index: 2;
+}
